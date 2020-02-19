@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scikit-learn</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Garamond);
+      @import url(https://fonts.googleapis.com/css?family=Muli:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    </style>
+    <style>
+      .remark-slide-content { font-size: 25px; }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: center, middle
+
+
+.center[
+![:scale 35%](logo.svg)
+]
+
+Andreas Müller
+
+Nicolas Hug
+
+*Columbia University*
+
+---
+
+<!-- What open source project(s) do you represent? How are these projects serving the scientific community? -->
+
+.center[
+![:scale 15%](logo.svg)
+]
+
+.center[
+**Machine Learning in Python**
+]
+
+Collection of estimators (models) and tools for:
+- data pre-processing
+- model selection
+- inspection tools
+
+Standard API for other ML libraries. Application agnostic.
+
+Heavy on the doc
+
+Relies on `Numpy`, `Scipy`, `Matplotlib` (optionally) and `Cython` (also
+`Joblib` and friends)
+
+Tighter integration with `pandas` is in discussion
+
+---
+
+<!-- What are your goals and expectations for the coming year? -->
+
+.center[
+![:scale 15%](logo.svg)
+]
+
+.center[
+**Goals for the coming year**
+]
+
+Ease of use of the estimators:
+- **Missing values** without imputation
+- **Categorical variables** without pre-preprocessing
+
+Keep on improving the docs
+
+Keep up with the contributions and bug reports
+
+A million other things
+
+---
+
+.center[
+![:scale 15%](logo.svg)
+]
+
+<!--
+What do you hope to achieve by learning from or collaborating with other grantees?
+What expertise do you have to share with other grantees?
+-->
+
+.center[
+**Hoping to**
+]
+
+- Tighten collaboration and inter-operability with downstream and upstream projects
+- Enjoy the west coast TODO write something else
+
+.center[
+**Expertise**
+]
+
+- Machine Learning
+- Optimizing code with Cython or Numba
+- TODO Andy
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <script>
+    // Config Remark
+    remark.macros['scale'] = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+    config_remark = {
+        highlightStyle: 'github',
+        highlightSpans: true,
+        highlightLines: true,
+        ratio: "16:9"
+    };
+      var slideshow = remark.create(config_remark);
+
+    // Configure MathJax
+    MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] /* removed 'code' entry*/
+    }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+    </script>
+  </body>
+</html>
